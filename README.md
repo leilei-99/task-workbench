@@ -6,7 +6,12 @@
 
 ## 在线使用
 
-本仓库是纯静态单页，开启 GitHub Pages（Source: `main` 分支 / 根目录）后即可直接在线访问，无需登录。
+**直接打开：https://leilei-99.github.io/task-workbench/**
+
+在线版同样无需登录、无需安装，手机和电脑浏览器都能用。打勾进度存在各自浏览器本地，互不影响。
+
+> 仓库源码：https://github.com/leilei-99/task-workbench
+> Pages 托管：`main` 分支 / 根目录，`index.html` 即页面入口。
 
 ## 直接用
 
