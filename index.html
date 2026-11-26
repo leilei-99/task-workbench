@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
 <meta name="theme-color" content="#3b82f6">
-<title>任务推进工作台</title>
+<title>陈媛工作台</title>
 <style>
   /* ===== Reset & Base ===== */
   *, *::before, *::after { box-sizing: border-box; }
@@ -61,6 +61,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+  .topbar-left { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+  .topbar .brand {
+    font-size: 12px; font-weight: 600; letter-spacing: .3px;
+    color: var(--primary-dark);
   }
   .topbar h1 { margin: 0; font-size: 17px; font-weight: 600; }
   .topbar .sync {
@@ -378,7 +383,10 @@
 <body>
 <div class="app">
   <div class="topbar">
-    <h1 id="page-title">今日任务</h1>
+    <div class="topbar-left">
+      <span class="brand" id="app-name">陈媛工作台</span>
+      <h1 id="page-title">今日任务</h1>
+    </div>
     <div class="sync" title="本地存储已启用">
       <span class="sync-dot"></span>
       <span>本地存储</span>
@@ -408,7 +416,7 @@
 
 <script>
 /* =========================================================
-   任务推进工作台
+   陈媛工作台
    - 数据层 / 业务逻辑 / UI 分层
    - 单文件、零外部依赖，localStorage 持久化（前缀 wb_taskflow_）
    - 今日任务按类别顺序解锁；昨日未完成按自然日归档，隔天过期
